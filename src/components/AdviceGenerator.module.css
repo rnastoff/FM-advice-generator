@@ -73,7 +73,7 @@ button:active {
 /************************ MEDIA QUERY  ************************/
 @media (max-width: 500px) {
   .card {
-    height: 320px;
+    /* height: 320px; */
     width: 344px;
   }
 
@@ -90,5 +90,6 @@ button:active {
   .divider {
     background-image: url("../images/pattern-divider-mobile.svg");
     margin-top: 20px;
+    margin-bottom: 60px;
   }
 }

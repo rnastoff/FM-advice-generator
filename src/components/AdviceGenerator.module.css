@@ -1,0 +1,94 @@
+.card {
+  background: hsl(217, 19%, 24%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* height: 336px; */
+  width: 500px;
+  position: relative;
+}
+
+h1 {
+  color: hsl(150, 100%, 66%);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin-top: 46px;
+  text-align: center;
+}
+
+blockquote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+  width: 450px;
+  margin-top: 26px;
+}
+
+.divider {
+  background-image: url("../images/pattern-divider-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  margin-top: 44px;
+  margin-bottom: 60px;
+  width: 500px;
+}
+
+.divider img {
+  /* text-align: center; */
+}
+
+button {
+  background: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -32px;
+  transition: all ease 0.5s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 30px hsl(150, 100%, 66%);
+  transition: box-shadow ease 0.5s;
+}
+
+button:hover img {
+  transform: rotate(180deg);
+  transition: all ease 0.5s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/************************ MEDIA QUERY  ************************/
+@media (max-width: 500px) {
+  .card {
+    height: 320px;
+    width: 344px;
+  }
+
+  h1 {
+    font-size: 11px;
+    margin-top: 38px;
+  }
+
+  blockquote {
+    font-size: 24px;
+    width: 320px;
+  }
+
+  .divider {
+    background-image: url("../images/pattern-divider-mobile.svg");
+    margin-top: 20px;
+  }
+}
